@@ -1,6 +1,6 @@
 # Creating and Publishing Meteor Packages
 
-### Package structure
+### Package folder structure
 ```sh
 tapfuse:package-name/
  docs/                   --| Generated docs meteor app
@@ -21,7 +21,7 @@ tapfuse:package-name/
  README.md               --| Readme
 ```
 
-### Generate package structure with `oo-cli`
+### 1. Generate package structure with `oo-cli`
 ```
 # Package with UI
   oo g:package some:package
@@ -29,3 +29,12 @@ tapfuse:package-name/
   oo g:package tapfuse:package-name --lib
   # XXX For now manually change where your export goes 'server' or `client`
 ```
+
+### 2. Publish to GitHub
+
+GitHub **repository names** must be prefixed with `meteor-` e.g. `meteor-twitter-api`
+
+
+### 3. Generate and publish documentation (Optional per package basis)
+
+### 4. Publish package to [Atmosphere](http://atmospherejs.com)
