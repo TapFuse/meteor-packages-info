@@ -22,7 +22,7 @@ tapfuse:package-name/
 ```
 
 ### 1. Generate package structure with `oo-cli`
-```
+```sh
 # Package with UI
   oo g:package some:package
 # For JS only pakage use --lib flag
@@ -32,9 +32,19 @@ tapfuse:package-name/
 
 ### 2. Publish to GitHub
 
-GitHub **repository names** must be prefixed with `meteor-` e.g. `meteor-twitter-api`
+GitHub **repository names** must be prefixed with `meteor-` e.g. `meteor-package-name`
 
 
-### 3. Generate and publish documentation (Optional per package basis)
+### 3. Generate and publish documentation
 
-### 4. Publish package to [Atmosphere](http://atmospherejs.com)
+### 4. Publish package
+  #### Resources:
+  * https://atmospherejs.com/i/publishing
+  * https://meteorhacks.com/meteor-packaging-system-understanding-versioning
+```sh
+# In package folder run:
+  # For first time publish use --create flag
+  meteor publish --create
+  # Publish new versions
+  meteor publish
+```
