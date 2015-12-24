@@ -18,6 +18,7 @@ tapfuse:package-name/
  jsdoc.json              --| Config for meteor-jsdoc generator
  LICENSE                 --| MIT license
  package.js              --| Meteor package info
+ publish.json            --| Config for docs publishing
  README.md               --| Readme
 ```
 
@@ -35,10 +36,31 @@ tapfuse:package-name/
 GitHub **repository names** must be prefixed with `meteor-` e.g. `meteor-package-name`
 
 
-### 3. Generate and publish documentation
+### 3. Generate and publish documentation with `oo-cli`
+```sh
+# Build a meteor app for docs, output goes to /docs
+oo docs build
+# Build a static html site from meteor app
+oo docs static
+# Commit changes
+# Publish your docs to guthub pages
+oo docs publish
+
+# Commands aliases
+docs    -> d
+
+build   -> b
+static  -> s
+publish -> p
+```
+  * You can also run meteor docs app locally at [localhost:3333](http://localhost:3333) by running:
+```sh
+oo docs start
+oo docs stop
+```
 
 ### 4. Publish package
-  #### Resources:
+Resources:
   * https://atmospherejs.com/i/publishing
   * https://meteorhacks.com/meteor-packaging-system-understanding-versioning
 ```sh
