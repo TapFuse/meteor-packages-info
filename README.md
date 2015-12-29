@@ -36,7 +36,7 @@ tapfuse:package-name/
 GitHub **repository names** must be prefixed with `meteor-` e.g. `meteor-package-name`
 
 ### 3. Comment your package functions using [JSDOC](http://usejsdoc.org)
-Automatic build tool uses `meteor-jsdoc` to generate documentation, more [info](https://www.npmjs.com/package/meteor-jsdoc).
+Automatic build tool uses `meteor-jsdoc` to generate documentation, more info on [metero-jsdoc repo](https://www.npmjs.com/package/meteor-jsdoc) and [meteor hackpad](https://meteor.hackpad.com/Automatically-Generating-API-Docs-using-JSDoc-EpPmd2iuFEH).
 
 Some Meteor specific `jsdoc` examples:
 ```
