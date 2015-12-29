@@ -54,6 +54,7 @@ static  -> s
 publish -> p
 ```
   * If you are having issues with publishing try removing the remote branch `git push origin --delete gh-pages`
+
 #### You can also run meteor docs app locally at [localhost:3333](http://localhost:3333) by running:
 ```sh
 oo docs start
