@@ -35,8 +35,38 @@ tapfuse:package-name/
 
 GitHub **repository names** must be prefixed with `meteor-` e.g. `meteor-package-name`
 
+### 3. Comment your package functions using [JSDOC](http://usejsdoc.org)
+Automatic build tool uses `meteor-jsdoc` to generate documentation, more [info](https://www.npmjs.com/package/meteor-jsdoc).
 
-### 3. Generate and publish documentation with `oo-cli`
+Some Meteor specific `jsdoc` examples:
+```
+# Meteor methods
+
+/**
+ * @memberOf Methods
+ * @isMethod true
+ * @summary Method description.
+ * @param   {string} id Document id
+ * @param   {string} query Query params
+ * @return  {String} Result
+ */
+   
+```
+```
+# Meteor templates/components
+
+/**
+ * @memberOf Components
+ * @isTemplate true
+ * @name  myComponent
+ * @summary Component description.
+ * @param {String} id Document _id
+ * @param {Number} limit Limit number of records
+ */
+   
+```
+
+### 4. Generate and publish documentation with `oo-cli`
 ```sh
 # Build a meteor app for docs, output goes to /docs
 oo docs build
@@ -61,7 +91,7 @@ oo docs start
 oo docs stop
 ```
 
-### 4. Publish package
+### 5. Publish package
 Resources:
   * https://atmospherejs.com/i/publishing
   * https://meteorhacks.com/meteor-packaging-system-understanding-versioning
