@@ -33,7 +33,8 @@ tapfuse:package-name/
 
 ### 2. Publish to GitHub
 
-GitHub **repository names** must be prefixed with `meteor-` e.g. `meteor-package-name`
+* Do not for get to move to `_packages` directory
+* GitHub **repository names** must be prefixed with `meteor-` e.g. `meteor-package-name`
 
 ### 3. Comment your package functions using [JSDOC](http://usejsdoc.org)
 Automatic build tool uses `meteor-jsdoc` to generate documentation, more info on [metero-jsdoc repo](https://www.npmjs.com/package/meteor-jsdoc) and [meteor hackpad](https://meteor.hackpad.com/Automatically-Generating-API-Docs-using-JSDoc-EpPmd2iuFEH).
